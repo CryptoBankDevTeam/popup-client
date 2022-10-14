@@ -44,6 +44,19 @@ ul li {
     font-size: 0.9em;
     color: rgba(99, 104, 112, 0.9) !important; /* #E5E7EB */
 }
+.payment-address p {
+    text-align: left !important;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: rgb(247, 203, 203);
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+.payment-address p img {
+    padding-right: 5px;
+}
 .payment-address input:hover, .payment-address input:focus, .payment-address input:active {
     border: 0;
 }
