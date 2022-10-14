@@ -43,7 +43,7 @@ submit.onclick = function(e) {
         console.log(obj.Transaction.From);
         // console.log(obj.Transaction.To);
         let paidTo = pre_address + obj.Transaction.To + post_address;
-        if (paidTo == final_address && obj.Status == 'MINE') {
+        if (paidTo == final_address && obj.Status == 'MINED') {
             console.log('Payment Verified');
 
             $("#demo").append(paymentSuccessImage + PaymentSuccessTitle + PaymentSuccessBtn);
