@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Bank Africa</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <div class="payment text-center">
+            <div class="payment-close">
+                <a href="#">
+                    <img src="./img/close.svg" alt="Close Button">
+                </a>
+            </div>
+            <div class="payment-logo">
+                <img src="./img/cryptoBankLogoNoNameWhite.png" alt="Crypto Bank Africa">
+            </div>
+            <div class="payment-title">
+                <h5>Pay with cryptobank</h5>
+            </div>
+            <div class="payment-data">
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li>Amount</li>
+                            <li>From</li>
+                            <li>Vendor</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>₦0.00</li>
+                            <li>Unknown</li>
+                            <li>Unknown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="demo" id="demo">
+                    
+                </div>
+                <div class="payment-address" id="payment-address">
+                    <label for="address">Generated Payment Address:</label>
+                    <input type="text" id="addr" value="" readonly>
+                </div>
+                <!--
+                    <div class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out!
+                    </div>
+                -->
+                <div class="payment-hash" id="payment-hash">
+                    <form name="form" method="get">
+                        <input name="hash" id="hash" type="text" value="" placeholder="enter transaction hash"><br>
+                        <input type="submit" value="Verify Payment" name="Submit" id="submit" class="verify">
+                        
+                    </form>
+                    <p id="print"></p>
+                </div>
+                <div class="payment-sent">
+                    <img src="./img/sent.svg" alt="sent">
+                    <h4>Payment Sent</h4>
+                </div>
+            </div>
+            
+            <!--
+                <div class="payment-button">
+                    <a href="#">Verify Payment</a>
+                </div>
+            -->
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

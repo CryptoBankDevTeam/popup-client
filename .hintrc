@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "background-color: hwb(240 0% 0%)",
+          "color: hwb(208 94% 0%)",
+          "background-color: hwb(220 90% 8%)",
+          "background-color: hwb(161 2% 41%)",
+          "color: hwb(217 85% 5% / 0.9)",
+          "color: hwb(217 38% 57% / 0.9)",
+          "background-color: hwb(217 91% 4% / 0.9)"
+        ]
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
+  }
+}

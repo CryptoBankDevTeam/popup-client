@@ -1,0 +1,524 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5a6ead56f922805e017b45c055dc6382",
+    "packages": [
+        {
+            "name": "aelf/aelf-sdk",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AElfProject/aelf-sdk.php.git",
+                "reference": "d0d310f3fa089de3b283310dd1ee99f0a1356d0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AElfProject/aelf-sdk.php/zipball/d0d310f3fa089de3b283310dd1ee99f0a1356d0c",
+                "reference": "d0d310f3fa089de3b283310dd1ee99f0a1356d0c",
+                "shasum": ""
+            },
+            "require": {
+                "bitcoin-php/bitcoin-ecdsa": "^1.3",
+                "ext-curl": "*",
+                "ext-gmp": "*",
+                "google/protobuf": "^3.11",
+                "hhxsv5/php-multi-curl": "~1.0",
+                "kornrunner/secp256k1": "^0.1.2",
+                "php": ">=5.6",
+                "stephenhill/base58": "^1.1",
+                "tuupola/base58": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helper/Sha.php",
+                    "src/helper/CurlUniversalRequest.php"
+                ],
+                "psr-4": {
+                    "AElf\\": "src/",
+                    "AElf\\Api\\": "src/sdk/",
+                    "GPBMetadata\\": "src/protobuf/GPBMetadata",
+                    "Google\\Protobuf\\": "src/protobuf/Google/Protobuf",
+                    "AElf\\Protobuf\\Generated\\": "src/protobuf/AElf/Protobuf/Generated/"
+                },
+                "classmap": [
+                    "src/helper"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "AElf php SDK",
+            "homepage": "https://github.com/AElfProject/aelf-sdk.php",
+            "keywords": [
+                "AElf php SDK",
+                "aelf",
+                "aelf-sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/AElfProject/aelf-sdk.php/issues",
+                "source": "https://github.com/AElfProject/aelf-sdk.php/tree/v1.1.0"
+            },
+            "time": "2021-09-01T05:31:54+00:00"
+        },
+        {
+            "name": "bitcoin-php/bitcoin-ecdsa",
+            "version": "1.3.5",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:BitcoinPHP/BitcoinECDSA.php.git",
+                "reference": "a4d99b9f89cbd973be5fd142fe4b09f61dbddd67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BitcoinPHP/BitcoinECDSA.php/zipball/a4d99b9f89cbd973be5fd142fe4b09f61dbddd67",
+                "reference": "a4d99b9f89cbd973be5fd142fe4b09f61dbddd67",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "8.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "BitcoinPHP\\BitcoinECDSA": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "BitcoinPHP",
+                    "email": "panda@panda.cat",
+                    "homepage": "http://github.com/BitcoinPHP",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library allowing to generate BTC addresses from private keys",
+            "homepage": "https://github.com/BitcoinPHP/BitcoinECDSA.php",
+            "keywords": [
+                "ECDSA",
+                "bitcoin"
+            ],
+            "time": "2021-02-02T00:33:50+00:00"
+        },
+        {
+            "name": "fgrosse/phpasn1",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgrosse/PHPASN1.git",
+                "reference": "973b5f437221e477486cdd33f1d693fd68446df6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgrosse/PHPASN1/zipball/973b5f437221e477486cdd33f1d693fd68446df6",
+                "reference": "973b5f437221e477486cdd33f1d693fd68446df6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.3",
+                "satooshi/php-coveralls": "^1.0|^2.0"
+            },
+            "suggest": {
+                "php-curl": "For loading OID information from the web if they have not bee defined statically"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FG\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Friedrich Große",
+                    "email": "friedrich.grosse@gmail.com",
+                    "homepage": "https://github.com/FGrosse",
+                    "role": "Author"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+                }
+            ],
+            "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
+            "homepage": "https://github.com/FGrosse/PHPASN1",
+            "keywords": [
+                "DER",
+                "asn.1",
+                "asn1",
+                "ber",
+                "binary",
+                "decoding",
+                "encoding",
+                "x.509",
+                "x.690",
+                "x509",
+                "x690"
+            ],
+            "support": {
+                "issues": "https://github.com/fgrosse/PHPASN1/issues",
+                "source": "https://github.com/fgrosse/PHPASN1/tree/2.0"
+            },
+            "time": "2018-12-02T01:31:57+00:00"
+        },
+        {
+            "name": "google/protobuf",
+            "version": "v3.21.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/protocolbuffers/protobuf-php.git",
+                "reference": "d8832b49cf82052bdd5d0bbb573210c473642249"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/d8832b49cf82052bdd5d0bbb573210c473642249",
+                "reference": "d8832b49cf82052bdd5d0bbb573210c473642249",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.0.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Need to support JSON deserialization"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Protobuf\\": "src/Google/Protobuf",
+                    "GPBMetadata\\Google\\Protobuf\\": "src/GPBMetadata/Google/Protobuf"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "proto library for PHP",
+            "homepage": "https://developers.google.com/protocol-buffers/",
+            "keywords": [
+                "proto"
+            ],
+            "support": {
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.21.6"
+            },
+            "time": "2022-09-13T23:46:29+00:00"
+        },
+        {
+            "name": "hhxsv5/php-multi-curl",
+            "version": "v1.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhxsv5/php-multi-curl.git",
+                "reference": "4593fe56586f831010301a0c3262f3d788a55ae0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhxsv5/php-multi-curl/zipball/4593fe56586f831010301a0c3262f3d788a55ae0",
+                "reference": "4593fe56586f831010301a0c3262f3d788a55ae0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hhxsv5\\PhpMultiCurl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xie Biao",
+                    "email": "hhxsv5@sina.com"
+                }
+            ],
+            "description": "A simple and efficient library wrapping curl_multi_* is used to handle parallel http requests.",
+            "homepage": "https://github.com/hhxsv5/php-multi-curl",
+            "keywords": [
+                "curl",
+                "multi-curl",
+                "multi-http-request",
+                "parallel-request"
+            ],
+            "support": {
+                "issues": "https://github.com/hhxsv5/php-multi-curl/issues",
+                "source": "https://github.com/hhxsv5/php-multi-curl/tree/v1.5.9"
+            },
+            "time": "2019-04-10T05:42:17+00:00"
+        },
+        {
+            "name": "kornrunner/secp256k1",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kornrunner/php-secp256k1.git",
+                "reference": "915f0ef1ec748606a1117b171093266de349b058"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kornrunner/php-secp256k1/zipball/915f0ef1ec748606a1117b171093266de349b058",
+                "reference": "915f0ef1ec748606a1117b171093266de349b058",
+                "shasum": ""
+            },
+            "require": {
+                "mdanter/ecc": "^0.5",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kornrunner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Momčilović",
+                    "email": "boris.momcilovic@gmail.com"
+                }
+            ],
+            "description": "Pure PHP secp256k1",
+            "keywords": [
+                "curve",
+                "ecc",
+                "elliptic",
+                "secp256k1"
+            ],
+            "support": {
+                "issues": "https://github.com/kornrunner/php-secp256k1/issues",
+                "source": "https://github.com/kornrunner/php-secp256k1/tree/master"
+            },
+            "time": "2019-01-16T17:01:51+00:00"
+        },
+        {
+            "name": "mdanter/ecc",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpecc/phpecc.git",
+                "reference": "ed5c6d496f5310de1b7071b8375fafa3559a1344"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpecc/phpecc/zipball/ed5c6d496f5310de1b7071b8375fafa3559a1344",
+                "reference": "ed5c6d496f5310de1b7071b8375fafa3559a1344",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "fgrosse/phpasn1": "v2.0.x",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "~2",
+                "symfony/yaml": "~2.6|~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mdanter\\Ecc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matyas Danter",
+                    "homepage": "http://matejdanter.com/",
+                    "role": "Author"
+                },
+                {
+                    "name": "Thibaud Fabre",
+                    "email": "thibaud@aztech.io",
+                    "homepage": "http://aztech.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Thomas Kerin",
+                    "email": "afk11@users.noreply.github.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "PHP Elliptic Curve Cryptography library",
+            "homepage": "https://github.com/phpecc/phpecc",
+            "keywords": [
+                "Diffie",
+                "ECDSA",
+                "Hellman",
+                "curve",
+                "ecdh",
+                "elliptic",
+                "nistp192",
+                "nistp224",
+                "nistp256",
+                "nistp384",
+                "nistp521",
+                "phpecc",
+                "secp256k1",
+                "secp256r1"
+            ],
+            "support": {
+                "issues": "https://github.com/phpecc/phpecc/issues",
+                "source": "https://github.com/phpecc/phpecc/tree/master"
+            },
+            "time": "2017-10-09T16:05:37+00:00"
+        },
+        {
+            "name": "stephenhill/base58",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stephen-hill/base58php.git",
+                "reference": "bd9fc19c788160a2f85ba0a19cd800eaf5ba5e99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stephen-hill/base58php/zipball/bd9fc19c788160a2f85ba0a19cd800eaf5ba5e99",
+                "reference": "bd9fc19c788160a2f85ba0a19cd800eaf5ba5e99",
+                "shasum": ""
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "StephenHill\\": "src/",
+                    "StephenHill\\Benchmarks\\": "benchmarks/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Hill",
+                    "email": "stephen@gatekiller.co.uk"
+                }
+            ],
+            "description": "Base58 Encoding and Decoding Library for PHP",
+            "support": {
+                "issues": "https://github.com/stephen-hill/base58php/issues",
+                "source": "https://github.com/stephen-hill/base58php/tree/v1.1.5"
+            },
+            "time": "2019-08-22T16:51:59+00:00"
+        },
+        {
+            "name": "tuupola/base58",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tuupola/base58.git",
+                "reference": "4cd1a3972679946e87c0746f59ff8f0760240b4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tuupola/base58/zipball/4cd1a3972679946e87c0746f59ff8f0760240b4c",
+                "reference": "4cd1a3972679946e87c0746f59ff8f0760240b4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "overtrue/phplint": "^1.0.0",
+                "phpbench/phpbench": "^0.13.0",
+                "phpstan/phpstan": "^0.12.37",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "suggest": {
+                "ext-gmp": "GMP extension provides the fastest encoding and decoding."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tuupola\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mika Tuupola",
+                    "email": "tuupola@appelsiini.net",
+                    "homepage": "https://appelsiini.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Base58 encoder and decoder for arbitrary data",
+            "homepage": "https://github.com/tuupola/base58",
+            "keywords": [
+                "base58"
+            ],
+            "support": {
+                "issues": "https://github.com/tuupola/base58/issues",
+                "source": "https://github.com/tuupola/base58/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tuupola",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-09T11:38:20+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "aelf/aelf-sdk": "^1.1"
+    }
+}
