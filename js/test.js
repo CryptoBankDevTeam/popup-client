@@ -9,7 +9,7 @@ function TestURLQuery() {
     let addressName = params.amount;
     let senderEmail = params.email;
     let vendorCodeID = params.vendorID;
-    document.getElementById('TotalAmount').innerHTML = '₦' + addressName;
+    document.getElementById('TotalAmount').innerHTML = addressName;
     document.getElementById('SenderEmail').innerHTML = senderEmail;
     document.getElementById('VendorID').innerHTML = vendorCodeID;
     // console.log(addressName);
